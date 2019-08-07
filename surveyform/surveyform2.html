@@ -5,9 +5,13 @@
     <title>
       survey form
     </title>
+    <link rel="stylesheet"  href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-  <h1 id="title">visitor survey form</h1>
-<p id="description">let us know how was your visit to our company</p>
+  <h1 id="title">Visitor feedback form</h1>
+  <div id="form-outer">
+<p id="description">let us know how was your visit to our restaurant</p>
 <form id="survey-form">
   <div class="rowTab">
     <div class="labels">
@@ -32,13 +36,12 @@
           <label id="age-label" for="age">*Age:</label>
         </div>
         <div class="rightTab">
-          <input type="text" name="age"id="number" min="1" max="125"class="input-field" placeholder="Age" required>
-    
+          <input type="text" name="age"id="number" min="1" max="125"class="input-field" placeholder="Age" required>    
         </div>
-      </div>
+      </div>     
       <div class="rowTab">
           <div class="labels">
-            <label for="currentPos">which option best describes your current role?</label>
+            <label for="currentPos">Who are you?</label>
           </div>
           <div class="rightTab">
             <select id="dropdown" name="currentPos" class="dropdown">
@@ -47,22 +50,19 @@
               <option value="job">Full time job</option>
               <option value="preferNo">prefer not to say</option>
               <option value="other">other</option>
-              </select>
-              
+              </select> 
           </div>
         </div>
         <div class="rowTab">
           <div class="labels">
-            <label for="userRating">How likely is that you would recommend our company</label>
+            <label for="userRating">How likely is that you would recommend our store</label>
           </div>
           <div class="rightTab">
             <ul style="list-style: none;">
-            <li class="radio"><label>positively<input name="radio-buttons" value="1"type="radio"class="userRatings"></label></li>
+            <li class="radio"><label><input name="radio-buttons" value="1"type="radio"class="userRatings">positively</label></li>
 
-                <li class="radio"><label>negatively<input name="radio-buttons" value="1"type="radio"class="userRatings"></label></li>
-  
-    
-                    <li class="radio"><label>not sure<input name="radio-buttons" value="1"type="radio"class="userRatings"></label></li>
+                <li class="radio"><label><input name="radio-buttons" value="2"type="radio"class="userRatings">negatively</label></li>
+                    <li class="radio"><label><input name="radio-buttons" value="3"type="radio"class="userRatings">not sure</label></li>
                     </ul>
           </div>
 
@@ -80,9 +80,28 @@
               <option value="ice-cream"> ice-cream</option>
             </select>
         </div>
-      
+      <div class=rowTab>
+        <div class="labels">
+          <label for="improvement">Please suggest what improvements can be done at our coffee store:</label>
+        </div>
+        <div class="rightTab">
+          <ul id="preferences" style="list-style:none;">
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">COFFEE </label></li>
+            <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">TEA </label></li>
+            <li class="checkbox"></label><input name="prefer" value="3" type="checkbox" class="userRatings">FRANKIE</li>
+          </ul>
+
+        </div>   
+</div>
+<div class="rowTab">
+  <div class="labels">
+    <label for="comments">Any comments or suggestions?</label>
+  </div>
+  <div class="rightTab">
+    <textarea  name="comment" id="comments" class="input-field" style="height:50px;resize:vertical;" placeholder="enter your valuable feedback and comments"></textarea>
+  </div>
+</div>
+<button id="submit" type="submit">submit</button>
 </form>
-  
-  
-  
+</div>
   </html>
