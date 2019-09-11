@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-this my first git hub project
+
+this where i have put all my code 
 =======
 # webdevelopment
 my first basic projects on git hub for web development
